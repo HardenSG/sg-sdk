@@ -1,18 +1,17 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const fs = require('fs')
-const { promisify } = require('util')
-const { exec } = require('child_process')
-const parseGitLog = require('git-log-parser')
-
-const execAsync = promisify(exec)
+// const { promisify } = require('util')
+// const { exec } = require('child_process')
+const gitlog = require('git-log-command')
 
 async function generateChangelog() {
   try {
     // 获取 Git 提交记录
-    const { stdout } = await execAsync('git log --pretty=format:"%s"')
+    const commits = await gitlog({
+      fields: ['subject'],
+    })
 
-    // 解析提交记录
-    const commits = await parseGitLog.parse(stdout)
+    console.log('Parsed commits:', commits)
 
     // 生成 changelog
     let changelog = ''

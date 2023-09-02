@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 import chalk from 'chalk'
 chalk.level = 2
 
