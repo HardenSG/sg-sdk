@@ -1,0 +1,24 @@
+{
+  "name": "sg-sdk",
+  "version": "1.0.0",
+  "description": "This is a self sdk for increment speed",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "npm install husky@8.0.2 -D & husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "chalk": "^4.1.2",
+    "eslint": "^8.48.0",
+    "git-log-parser": "^1.2.0",
+    "husky": "^8.0.2",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  }
+}
