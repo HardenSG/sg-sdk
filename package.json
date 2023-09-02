@@ -1,6 +1,6 @@
 {
   "name": "sg-sdk",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "This is a self sdk for increment speed",
   "main": "index.js",
   "scripts": {
