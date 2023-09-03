@@ -1,6 +1,6 @@
 module.exports = {
   env: {
-    browser: true,
+    browser: false,
     commonjs: true,
     es2021: true,
   },
@@ -21,5 +21,7 @@ module.exports = {
     ecmaVersion: 'latest',
   },
   plugins: ['@typescript-eslint'],
-  rules: {},
+  rules: {
+    '@typescript-eslint/no-var-requires': 'off',
+  },
 }

@@ -8,9 +8,10 @@
     "allowSyntheticDefaultImports": true,
     "target": "es2017",
     "sourceMap": true,
-    "outDir": "./dist",
+    "outDir": "dist",
     "baseUrl": "./",
     "incremental": true,
     "skipLibCheck": true
-  }
+  },
+  "include": ["*.ts"]
 }
